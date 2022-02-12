@@ -10,10 +10,13 @@ do
  then
    echo "heads"
    head_win=$(($head_win + $toss_result))
-   elif [ $head_win -eq 21 ]
+   if [ $head_win -eq 21 ]
    then
    break;
- else
+   fi
+  fi
+ if [ $toss_result -eq 0 ]
+then
    echo "tails"
    tail_win=$(($tail_win +$toss_result))
    if [ $tail_win -eq 21 ]
@@ -29,7 +32,7 @@ if [ $head_win -gt $tail_win ]
    echo $win1 "by" $head1_win
 else
    tail_win=$(($tail_win - $head_win))
-   echo $win2 $tail_win
+   echo $win2 "by" $tail_win
 fi
 
 
