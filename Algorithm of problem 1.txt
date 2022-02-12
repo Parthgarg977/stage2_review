@@ -1,0 +1,46 @@
+Algorithm
+Step 1 :-
+Enter three numerical values
+Expected Result: User should be able to enter 3 numerical values
+
+Step 2 :-
+Create a dictonary and array
+Expected Result: dictonary, array should be created
+
+Step 3 :-
+Assign the arithmetic operations of entered numerical values to the dictonaries keys
+Expected Result: Arithmetic operation's result should be stored in dictonary
+
+Step 4 :-
+Assign the dictonaries values to the arrays
+Expected Result: Dictonaries values should be stored in the arrays indexes
+
+Step 5 :-
+Print the values of the arrays to check the values stored in the array
+Expected result: values of the array should be printed
+
+Step 6 :-
+Use switch case to perform ascending or descending sorting of the array values.
+Expected result: a choice should be given to user to select the option of ascending or descending sorting
+
+Step 7:-
+If option of ascending is selected, create 2 for loop to iterate the array,as in first loop, start transverse from i=0 index and in 2nd loop, start transverse from i +1 index and follow the if else condition.
+Expected result: transversing through the array should be there and follow the below criteria:-
+for all array elements  
+      if arr[i] > arr[i+1]  
+         swap(arr[i], arr[i+1])  
+      end if  
+   end for     
+   return arr
+Step 8:-
+If option of descending is selected, create 2 for loop to iterate the array,as in first loop, start transverse from i=0 index and in 2nd loop, start transverse from i +1 index and follow the if else condition.
+Expected result: transversing through the array should be there and follow the below criteria:-
+for all array elements  
+      if arr[i] < arr[i+1]  
+         swap(arr[i], arr[i+1])  
+      end if  
+   end for     
+   return arr
+Step 9:
+If none of the option is selected, then program will end
+Expected result: If 1 or 2 number is not entered, exit will print and program will exit.
