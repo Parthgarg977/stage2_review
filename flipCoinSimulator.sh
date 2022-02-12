@@ -26,7 +26,7 @@ done
 if [ $head_win -gt $tail_win ]
  then
    head1_win=$(($head_win - $tail_win))
-   echo $win1 $head1_win $tail_win
+   echo $win1 "by" $head1_win
 else
    tail_win=$(($tail_win - $head_win))
    echo $win2 $tail_win
