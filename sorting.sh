@@ -21,7 +21,7 @@ arr[3]=${dict[3]}
 # let i++;
 #done
 echo ${arr[@]}
-read -p "Enter 1 to perform ascending or 2 to perform descending or 3 to perform both" sort
+read -p "Enter 1 to perform ascending or 2 to perform descending or 3 to exit " sort
 case $sort in
 1)
 for ((i = 0; i<4; i++))

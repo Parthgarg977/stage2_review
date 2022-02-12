@@ -1,7 +1,5 @@
 head_win=0
 tail_win=0
-win1="Its win for head"
-win2="Its win for tail"
 i=0
 while [ $i -ge 0 ] ;
 do
@@ -9,7 +7,7 @@ do
  if [ $toss_result -eq 1 ] 
  then
    echo "heads"
-   head_win=$(($head_win + $toss_result))
+   ((head_win++))
    if [ $head_win -eq 21 ]
    then
    break;
@@ -18,7 +16,7 @@ do
  if [ $toss_result -eq 0 ]
 then
    echo "tails"
-   tail_win=$(($tail_win +$toss_result))
+   ((tail_win++))
    if [ $tail_win -eq 21 ]
    then
    break;
@@ -29,11 +27,12 @@ done
 if [ $head_win -gt $tail_win ]
  then
    head1_win=$(($head_win - $tail_win))
-   echo $win1 "by" $head1_win
+   echo "Its win for head by" $head1_win
 else
    tail_win=$(($tail_win - $head_win))
-   echo $win2 "by" $tail_win
+   echo "Its win for tail by" $tail_win
 fi
+
 
 
 
