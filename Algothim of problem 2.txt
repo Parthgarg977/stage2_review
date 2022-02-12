@@ -1,0 +1,32 @@
+Algorithm
+Step 1 :-
+Create three variables with 0 value with 2 variables to keep track of wins of heads and tails, 3rd variable is used in while loop.
+Expected result: head_win, tail_win, i variables are created
+
+Step 2 :-
+A while loop is created
+
+Step 3 :- 
+In while loop, random variable modulus by 2 to generate 1 or 0 values are stored in a variable toss_win
+Expected result:- toss_result= ((RANDOM%2))
+
+Step 4:-
+If random value is 1 value, then go inside if condition of toss_win -eq 1
+Expected result: print heads text and increment the head_win variable
+
+Step 5:-
+If random value is 0 value, then go inside if condition of toss_win -eq 0
+Expected result: print tails text and increment the tail_win variable
+
+Step 6:-
+While loop continue to run, until head_win or tail_win reaches a value of 21, loop will go inside
+Expected result: Loop will break
+
+Step 7:-
+Outside the loop, if head_win is greater than tail_win,
+Expected result: print "Its win for head by" and head_win value
+
+Step 8:-
+Outside the loop, if head_win is not greater than tail_win,
+Expected result: print "Its win for tail by" and tail
+_win value
